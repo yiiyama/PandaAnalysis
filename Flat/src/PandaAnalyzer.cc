@@ -490,7 +490,7 @@ void PandaAnalyzer::Run() {
                 tr.Start();
                 pr.Report();
                 ResetBranches();
-                event.getEntry(iE);
+                event.getEntry(*tIn, iE);
                 tr.TriggerEvent("GetEntry");
 
                 // event info
